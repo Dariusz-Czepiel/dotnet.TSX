@@ -24,11 +24,9 @@ const onActive = (nextIndex: number) => setIndex(nextIndex);
 return(
     <AppBar>
         <Heading level='3' margin='none'>My App</Heading>
-        <Tabs activeIndex={index} onActive={onActive}>
         <RoutedAnchor margin={{right: '10px'}} path="/1">Tab 1</RoutedAnchor>
         <RoutedAnchor margin={{right: '10px'}} path="/2">Tab 2</RoutedAnchor>
         <RoutedAnchor path="/3">Tab 3</RoutedAnchor>
-      </Tabs>
         <Button icon={<Notification />} onClick={() => showSidebar()}></Button>
     </AppBar>);
 });
